@@ -22,7 +22,7 @@ class WikipediaAnsweringMachine():
 		topic_obj = TopicExtractor(speech)
 		result = topic_obj.extract()
 		try:
-			print("~Topic: " + result[0])
+			print(("~Topic: " + result[0]))
 		except:
 			pass
 		speech = speech.upper()
@@ -86,4 +86,4 @@ def nostderr():
 	sys.stderr = save_stderr
 
 if __name__ == "__main__":
-	print(WikipediaAnsweringMachine.answer("At eight o'clock on Thursday morning Arthur didn't feel very good."))
+	print((WikipediaAnsweringMachine.answer("At eight o'clock on Thursday morning Arthur didn't feel very good.")))

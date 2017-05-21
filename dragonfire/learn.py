@@ -50,5 +50,5 @@ def nostderr():
 
 if __name__ == "__main__":
 	convo_id = uuid.uuid4()
-	print(Teachable.respond("http://teach.dragon.computer/", convo_id, "Learn the sun is hot"))
-	print(Teachable.respond("http://teach.dragon.computer/", convo_id, "What is the sun"))
+	print((Teachable.respond("http://teach.dragon.computer/", convo_id, "Learn the sun is hot")))
+	print((Teachable.respond("http://teach.dragon.computer/", convo_id, "What is the sun")))

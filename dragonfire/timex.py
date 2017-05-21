@@ -353,7 +353,7 @@ def ground(tagged_text, base_date):
 def demo():
 	import nltk
 	text = nltk.corpus.abc.raw('rural.txt')[:10000]
-	print(TimeDetector.tag(text))
+	print((TimeDetector.tag(text)))
 
 if __name__ == '__main__':
 	demo()

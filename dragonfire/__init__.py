@@ -67,7 +67,7 @@ def command(speech):
 				continue
 
 			com = com.upper()
-			print("You: " + com)
+			print(("You: " + com))
 
 			if inactive == 1 and "DRAGON FIRE" not in com and "WAKE UP" not in com and com != "HEY":
 				continue

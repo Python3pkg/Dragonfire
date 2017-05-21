@@ -31,7 +31,7 @@ class Data:
 		#if songRunning == True:
 		#	subprocess.Popen(["rhythmbox-client","--pause"])
 		if len(message) < 10000:
-			print("Dragonfire: " + message.upper())
+			print(("Dragonfire: " + message.upper()))
 		print("_______________________________________________________________\n")
 		proc = subprocess.Popen(["festival","--tts"], stdin=subprocess.PIPE, stdout=FNULL, stderr=FNULL)
 		message = "".join([i if ord(i) < 128 else ' ' for i in message])

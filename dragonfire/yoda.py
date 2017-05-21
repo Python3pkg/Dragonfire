@@ -76,4 +76,4 @@ def nostderr():
 	sys.stderr = save_stderr
 
 if __name__ == "__main__":
-	print(YodaQA.answer("http://localhost:4567", "When was Albert Einstein born", "sir"))
+	print((YodaQA.answer("http://localhost:4567", "When was Albert Einstein born", "sir")))

@@ -138,12 +138,12 @@ class TopicExtractor(object):
 
 
 if __name__ == "__main__":
-	print(Classifiers.gender("Mehmet"))
-	print(Classifiers.gender("Ayşe"))
-	print(Classifiers.gender("İsmail"))
-	print(Classifiers.gender("Berna"))
+	print((Classifiers.gender("Mehmet")))
+	print((Classifiers.gender("Ayşe")))
+	print((Classifiers.gender("İsmail")))
+	print((Classifiers.gender("Berna")))
 
 	sentence = "Do you know the birthdate of Barrack Obama"
 	topic_obj = TopicExtractor(sentence)
 	result = topic_obj.extract()
-	print("This sentence is about: %s" % ", ".join(result))
+	print(("This sentence is about: %s" % ", ".join(result)))
